@@ -1,0 +1,19 @@
+body{
+	background-image:url('/IndexImg/tumblr_4f3462cf7754229ea31ff5078833402f_fdfece10_1280.webp');
+	text-align:center;
+}
+
+a:link{
+	color:black;
+}
+a:visited{
+	color:black;
+}
+a:hover{
+	color:blue;
+}
+
+
+h2{
+	font-weight:bold;
+}

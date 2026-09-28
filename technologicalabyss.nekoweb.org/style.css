@@ -1,0 +1,53 @@
+
+body {
+  background-image:url('/MainImg/tumblr_7800ff667b45f072b1813f05f2d3b788_a9acfff4_400.webp');
+  color: white;
+  font-family: Trebuchet MS;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.left{
+	float:left;
+	margin-left:5px;
+  border-radius: 10px;
+}
+
+.right{
+	float:right;
+}
+
+
+section {
+  display: inline-block;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.picture{
+  float:right;
+  margin-right:5px;
+  border-radius: 10px;
+}
+
+#statuscafe {
+    padding: .5em;
+    background-color: black;
+    border: 4px solid midnightblue;
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}

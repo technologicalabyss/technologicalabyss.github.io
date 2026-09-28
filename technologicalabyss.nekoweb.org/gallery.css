@@ -1,0 +1,83 @@
+/***
+EZ Gallery by netfriend - https://netfriend.neocities.org/ez-gallery/
+Released under the Unlicense - https://unlicense.org/
+***/
+
+body {
+  background-image:url('MainImg/checkertranslucent.gif');
+  color: rgb(0, 0, 0);
+  font-family:Trebuchet MS;
+}
+
+
+.containerBox {
+  position: relative;
+  display: inline-block;
+  align-items:center;
+}
+.text-box {
+  position: absolute;    
+  height: 65%;
+  text-align: center;    
+  width: 100%;
+}
+.text-box:before {
+ content: '';
+ display: inline-block;
+ height: 100%;
+ vertical-align: middle;
+}
+h3 {
+ display: inline-block;
+ font-size: 20px; /*or whatever you want*/
+ color: #000000;   
+}
+h1 {
+  display: inline-block;
+  font-size: 24px; /*or whatever you want*/
+  color: #000000;  
+}
+img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+
+
+.ezgallery.montage { 
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.ezgallery.montage img {
+  flex: auto;
+  margin: 0 50px 50px 0;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+.ezgallery.horizontal { 
+  display: grid;
+  grid-gap: 5px;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.ezgallery.horizontal a {
+  text-align: center;
+}
+
+.ezgallery.horizontal img {
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 50px 50px 0;
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+  object-position: bottom;
+}
